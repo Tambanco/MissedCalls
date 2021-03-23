@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		49A45936260A50AC002ACB59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A45934260A50AC002ACB59 /* LaunchScreen.storyboard */; };
 		49A45941260A50AC002ACB59 /* MissedCallsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A45940260A50AC002ACB59 /* MissedCallsTests.swift */; };
 		49A4594C260A50AC002ACB59 /* MissedCallsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4594B260A50AC002ACB59 /* MissedCallsUITests.swift */; };
+		49A459B2260A78C2002ACB59 /* ViewCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A459B1260A78C2002ACB59 /* ViewCalls.swift */; };
+		49A459B8260A78E9002ACB59 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A459B7260A78E9002ACB59 /* ViewModel.swift */; };
 		693B319AD3BC2B3E6D6A833C /* Pods_MissedCalls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D7D270304E97A6016A55AC /* Pods_MissedCalls.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		49A45947260A50AC002ACB59 /* MissedCallsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MissedCallsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A4594B260A50AC002ACB59 /* MissedCallsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissedCallsUITests.swift; sourceTree = "<group>"; };
 		49A4594D260A50AC002ACB59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49A459B1260A78C2002ACB59 /* ViewCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCalls.swift; sourceTree = "<group>"; };
+		49A459B7260A78E9002ACB59 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		73E1A37D1B01AEB212DA80D0 /* Pods-MissedCalls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MissedCalls.debug.xcconfig"; path = "Target Support Files/Pods-MissedCalls/Pods-MissedCalls.debug.xcconfig"; sourceTree = "<group>"; };
 		81D7D270304E97A6016A55AC /* Pods_MissedCalls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MissedCalls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -97,7 +101,6 @@
 				73E1A37D1B01AEB212DA80D0 /* Pods-MissedCalls.debug.xcconfig */,
 				0949ADC1F356CE5E318B41AA /* Pods-MissedCalls.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,7 +131,9 @@
 			children = (
 				49A45926260A50AB002ACB59 /* AppDelegate.swift */,
 				49A45928260A50AB002ACB59 /* SceneDelegate.swift */,
-				49A4592A260A50AB002ACB59 /* ViewController.swift */,
+				49A459B6260A78CC002ACB59 /* Model */,
+				49A459AD260A78AA002ACB59 /* View */,
+				49A459BF260A78ED002ACB59 /* ViewModel */,
 				49A4592C260A50AB002ACB59 /* Main.storyboard */,
 				49A45932260A50AC002ACB59 /* Assets.xcassets */,
 				49A45934260A50AC002ACB59 /* LaunchScreen.storyboard */,
@@ -154,6 +159,30 @@
 				49A4594D260A50AC002ACB59 /* Info.plist */,
 			);
 			path = MissedCallsUITests;
+			sourceTree = "<group>";
+		};
+		49A459AD260A78AA002ACB59 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49A4592A260A50AB002ACB59 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49A459B6260A78CC002ACB59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49A459B1260A78C2002ACB59 /* ViewCalls.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49A459BF260A78ED002ACB59 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				49A459B7260A78E9002ACB59 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,8 +360,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A45931260A50AB002ACB59 /* MissedCalls.xcdatamodeld in Sources */,
+				49A459B2260A78C2002ACB59 /* ViewCalls.swift in Sources */,
 				49A4592B260A50AB002ACB59 /* ViewController.swift in Sources */,
 				49A45927260A50AB002ACB59 /* AppDelegate.swift in Sources */,
+				49A459B8260A78E9002ACB59 /* ViewModel.swift in Sources */,
 				49A45929260A50AB002ACB59 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
