@@ -11,10 +11,12 @@ struct DataFromRequest
 {
     let id:                 String
     let state:              String
-    let client:             Dictionary<String, String>
+    let clientName:         String
+    let clientPhoneNumber:  String
     let type:               String
     let created:            String
-    let businessNumber:     Dictionary<String, String>
+    let businessNumber:     String
+    let businesLabel:       String
     let origin:             String
     let favorite:           Bool
     let duration:           String

@@ -36,7 +36,7 @@ extension MissedCallsViewController
             {
             case .success(let value):
                 let json = JSON(value)
-                print(json)
+                self.parseCallsList(rawCallsList: json)
             case .failure(let error):
                 print(error)
                 
@@ -45,21 +45,62 @@ extension MissedCallsViewController
     }
 }
 
+//MARK: - Update Hotels List
+extension MissedCallsViewController
+{
+    func updateCallsList(jsonData: JSON)
+    {
+        if jsonData.exists()
+        {
+            let rawCallsList = jsonData[].arrayValue
+            if rawCallsList.count > 0
+            {
+                parserCallsList(rawHotelsList: rawCallsList)
+                
+                DispatchQueue.main.async
+                {
+                    
+                }
+            }
+            else
+            {
+                showAlert("No Data Available")
+            }
+        }
+    }
+}
+
 // MARK: - Parsing JSON
 extension MissedCallsViewController
 {
-    func parseCallsList(rawCallsList: [JSON])
+    func parseCallsList(rawCallsList: JSON)
     {
-        rawCallsList.forEach( { downloadedCalls.append( DataFromRequest(id: $0["id"].string ?? "there is no id",
-                                                                    state: $0["state"].string ?? "there is no state",
-                                                                    client: $0["client"].dictionaryValue ?? ["Key" : "Value"],
-                                                                    type: <#T##String#>,
-                                                                    created: <#T##String#>,
-                                                                    businessNumber: <#T##Dictionary<String, String>#>,
-                                                                    origin: <#T##String#>,
-                                                                    favorite: <#T##Bool#>,
-                                                                    duration: <#T##String#> ))
-        })
+        if rawCallsList.exists()
+        {
+            let rawCalls = rawCallsList[].arrayValue
+            if rawCalls.count > 0
+            {
+                rawCalls.forEach( { downloadedCalls.append( DataFromRequest(id: $0["id"].string ?? "there is no id",
+                                                                            state: $0["state"].string ?? "there is no state",
+                                                                            clientName: $0["client"]["address"].string ?? "there is no address",
+                                                                            clientPhoneNumber: $0["client"]["Name"].string ?? "there is no name",
+                                                                            type: $0["type"].string ?? "there is no type",
+                                                                            created: $0["created"].string ?? "there is no state",
+                                                                            businessNumber: $0["businessNumber"]["number"].string ?? "there is no business number",
+                                                                            businesLabel: $0["businessNumber"]["label"].string ?? "there is no business number",
+                                                                            origin: $0["origin"].string ?? "there is no origin",
+                                                                            favorite: $0["favorite"].bool ?? false,
+                                                                            duration: $0["duration"].string ?? "there is no duration" ))
+                })
+                print(rawCalls)
+            }
+            
+        }
+        else
+        {
+            print("Failure to download")
+        }
+        
     }
 }
 
