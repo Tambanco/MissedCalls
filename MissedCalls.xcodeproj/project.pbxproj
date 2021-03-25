@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		499C4A5F260CF5E800D8D35F /* Main cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 499C4A5E260CF5E800D8D35F /* Main cell.xib */; };
 		49A45927260A50AB002ACB59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A45926260A50AB002ACB59 /* AppDelegate.swift */; };
 		49A45929260A50AB002ACB59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A45928260A50AB002ACB59 /* SceneDelegate.swift */; };
 		49A4592B260A50AB002ACB59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4592A260A50AB002ACB59 /* ViewController.swift */; };
@@ -39,8 +40,9 @@
 
 /* Begin PBXFileReference section */
 		0949ADC1F356CE5E318B41AA /* Pods-MissedCalls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MissedCalls.release.xcconfig"; path = "Target Support Files/Pods-MissedCalls/Pods-MissedCalls.release.xcconfig"; sourceTree = "<group>"; };
-		49023AA8260CF45B00729571 /* MissedCalls.xcodeproj */ = {isa = PBXFileReference; path = MissedCalls.xcodeproj; sourceTree = "<group>"; };
-		49023AAA260CF45D00729571 /* MissedCalls.xcodeproj */ = {isa = PBXFileReference; path = MissedCalls.xcodeproj; sourceTree = "<group>"; };
+		49023AA8260CF45B00729571 /* MissedCalls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MissedCalls.xcodeproj; sourceTree = "<group>"; };
+		49023AAA260CF45D00729571 /* MissedCalls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MissedCalls.xcodeproj; sourceTree = "<group>"; };
+		499C4A5E260CF5E800D8D35F /* Main cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Main cell.xib"; sourceTree = "<group>"; };
 		49A45923260A50AB002ACB59 /* MissedCalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MissedCalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A45926260A50AB002ACB59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A45928260A50AB002ACB59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,16 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		499C4A56260CF52A00D8D35F /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		499C4A58260CF52A00D8D35F /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		49A4591A260A50AB002ACB59 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				49A4592C260A50AB002ACB59 /* Main.storyboard */,
+				499C4A5E260CF5E800D8D35F /* Main cell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +308,16 @@
 			mainGroup = 49A4591A260A50AB002ACB59;
 			productRefGroup = 49A45924260A50AB002ACB59 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 499C4A58260CF52A00D8D35F /* Products */;
+					ProjectRef = 49023AAA260CF45D00729571 /* MissedCalls.xcodeproj */;
+				},
+				{
+					ProductGroup = 499C4A56260CF52A00D8D35F /* Products */;
+					ProjectRef = 49023AA8260CF45B00729571 /* MissedCalls.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				49A45922260A50AB002ACB59 /* MissedCalls */,
@@ -312,6 +335,7 @@
 				49A45936260A50AC002ACB59 /* LaunchScreen.storyboard in Resources */,
 				49A45933260A50AC002ACB59 /* Assets.xcassets in Resources */,
 				49A4592E260A50AB002ACB59 /* Main.storyboard in Resources */,
+				499C4A5F260CF5E800D8D35F /* Main cell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
