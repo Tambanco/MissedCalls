@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
 
 struct dataFromRequest
 {
@@ -22,22 +20,4 @@ struct dataFromRequest
     let duration: String
 }
 
-// MARK: - Outlets
-    let urlAdress = "https://5e3c202ef2cb300014391b5a.mockapi.io/testapi"
-    
 
-//MARK: - Networking
-func makeRequest(url: String)
-{
-    AF.request(url).responseJSON { response in
-        switch response.result
-        {
-        case .success(let value):
-            let json = JSON(value)
-            print(json)
-        case .failure(let error):
-            print(error)
-            
-        }
-    }
-}
