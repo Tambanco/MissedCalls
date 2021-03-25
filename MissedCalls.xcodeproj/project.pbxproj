@@ -10,7 +10,7 @@
 		499C4A5F260CF5E800D8D35F /* Main cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 499C4A5E260CF5E800D8D35F /* Main cell.xib */; };
 		49A45927260A50AB002ACB59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A45926260A50AB002ACB59 /* AppDelegate.swift */; };
 		49A45929260A50AB002ACB59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A45928260A50AB002ACB59 /* SceneDelegate.swift */; };
-		49A4592B260A50AB002ACB59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4592A260A50AB002ACB59 /* ViewController.swift */; };
+		49A4592B260A50AB002ACB59 /* MissedCallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4592A260A50AB002ACB59 /* MissedCallsViewController.swift */; };
 		49A4592E260A50AB002ACB59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A4592C260A50AB002ACB59 /* Main.storyboard */; };
 		49A45931260A50AB002ACB59 /* MissedCalls.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49A4592F260A50AB002ACB59 /* MissedCalls.xcdatamodeld */; };
 		49A45933260A50AC002ACB59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A45932260A50AC002ACB59 /* Assets.xcassets */; };
@@ -46,7 +46,7 @@
 		49A45923260A50AB002ACB59 /* MissedCalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MissedCalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A45926260A50AB002ACB59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A45928260A50AB002ACB59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		49A4592A260A50AB002ACB59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49A4592A260A50AB002ACB59 /* MissedCallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissedCallsViewController.swift; sourceTree = "<group>"; };
 		49A4592D260A50AB002ACB59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49A45930260A50AB002ACB59 /* MissedCalls.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MissedCalls.xcdatamodel; sourceTree = "<group>"; };
 		49A45932260A50AC002ACB59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 		49A459BF260A78ED002ACB59 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				49A4592A260A50AB002ACB59 /* ViewController.swift */,
+				49A4592A260A50AB002ACB59 /* MissedCallsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -404,7 +404,7 @@
 			files = (
 				49A45931260A50AB002ACB59 /* MissedCalls.xcdatamodeld in Sources */,
 				49A459B2260A78C2002ACB59 /* ViewCalls.swift in Sources */,
-				49A4592B260A50AB002ACB59 /* ViewController.swift in Sources */,
+				49A4592B260A50AB002ACB59 /* MissedCallsViewController.swift in Sources */,
 				49A45927260A50AB002ACB59 /* AppDelegate.swift in Sources */,
 				49A45929260A50AB002ACB59 /* SceneDelegate.swift in Sources */,
 			);
